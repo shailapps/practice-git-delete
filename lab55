@@ -65,12 +65,12 @@ spec:
         memory: "600Mi"
 
 
-- If request is not specified & limit is given, then request = limit
-=================
-$ wget -O metricserver.yml https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
+# - If request is not specified & limit is given, then request = limit
+# =================
+# $ wget -O metricserver.yml https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
 
---kubelet-insecure-tls
-This should be applied under deployment
+# --kubelet-insecure-tls
+# This should be applied under deployment
 
 --------------
 kind: Deployment
@@ -101,3 +101,22 @@ spec:
 ---------------------
 $ kubectl autoscale deployment mydeploy --cpu-percent=20 --min=1 --max=10
 --------------
+
+
+
+
+##
+Kubernetes tools
+ - different areas
+ Logging
+   - FluentD FluentBit
+ Monitoring 
+   - DataDog New Relic
+ Cost 
+  - Kubecost, CloudHealth
+ Storage
+  - Portworx, Velero
+ Security
+  - Aqua, Twistlock
+ DevOps
+  - Jenkins, Gitlab
