@@ -109,7 +109,8 @@ $ kubectl autoscale deployment mydeploy --cpu-percent=20 --min=1 --max=10
 Kubernetes tools
  - different areas
  Logging
-   - FluentD FluentBit
+   - FluentD FluentBit   (Logging in Kubernetes with Elasticsearch, Fluentd and Kibana Kubernetes monitoring with EFK Stack on AWS EKS | Elasticsearch | Fluentd | Kibana | EFK Stack.
+       https://github.com/RekhuGopal/PythonHacks/tree/main/AWSBoto3Hacks/EFK-Stack-On-AWS-EKS
  Monitoring 
    - DataDog New Relic
  Cost 
