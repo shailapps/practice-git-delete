@@ -1,8 +1,8 @@
 
 provider "aws" {
-   region     = "eu-central-1"
-   access_key = "AKIATQ37NXB2G2LXXXXX"
-   secret_key = "r1oaShokKPw+YY7qaHxj8mD2T8BpxRUVXXXXXXXX"
+   region     = "us-east-1"
+   access_key = "AKIAUVRE5VL5TOD4DXXR"
+   secret_key = "jctd0fHxLNjP3xHzkDGyLLq8i8TZiAbFe/lnbjZH"
 }
 
 locals {
@@ -28,7 +28,7 @@ resource "aws_subnet" "staging-subnet" {
 
 resource "aws_instance" "ec2_example" {
    
-   ami           = "ami-0767046d1677be5a0"
+   ami           = "ami-0c02fb55956c7d316"
    instance_type = "t2.micro"
    subnet_id = aws_subnet.staging-subnet.id
    
